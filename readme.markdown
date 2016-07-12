@@ -157,7 +157,7 @@ PRequest* = ref object
   body*: string                 ## Body of the request, only for POST.
                                 ## You're probably looking for ``formData``
                                 ## instead.
-  headers*: StringTableRef      ## Headers received with the request.
+  headers*: HttpHeaders         ## Headers received with the request.
                                 ## Retrieving these is case insensitive.
   formData*: TMultiData         ## Form data; only present for
                                 ## multipart/form-data
